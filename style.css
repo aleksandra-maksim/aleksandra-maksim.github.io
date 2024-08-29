@@ -1,0 +1,172 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    color: #333;
+    background: #f8f8f8;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: auto;
+}
+
+/* Стили для хедера */
+.hero {
+    position: relative;
+    height: 60vh;
+    background: url('static/bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Новая секция */
+.hero-content {
+    width: 80%;
+    max-width: 800px;
+    margin: 160px auto 0; /* Отступ сверху для расстояния от заголовка */
+    text-align: right; /* Выравнивание текста вправо */
+}
+
+.hero-content h2, .hero-content p {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 10px 0 20px;
+    font-weight: 400;
+}
+
+.date {
+    font-size: 1.5em;
+}
+
+/* Детали приглашения */
+.details {
+    text-align: left;
+    padding: 40px 20px;
+    background: white;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: -50px auto 20px auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Информация о приглашении */
+.invitation-info {
+    text-align: center;
+}
+
+.info-heading {
+    font-size: 1.6em;
+    font-style: italic; /* Курсив только для заголовков */
+    color: black; /* Черный цвет только для заголовков */
+    margin: 20px 0;
+    font-weight: bold; /* Жирный текст только для заголовков */
+}
+
+.info-heading-2 {
+    font-size: 1.6em;
+    color: black; /* Черный цвет только для заголовков */
+    margin: 20px 0;
+    font-weight: bold; /* Жирный текст только для заголовков */
+}
+
+.info-text {
+    font-size: 1.2em;
+    color: #333; /* Обычный цвет текста */
+    margin: 10px 0;
+}
+
+/* Свадебное расписание */
+.schedule {
+    width: 100%;
+    font-size: 1em; /* Уменьшение общего размера шрифта в таблице */
+    border-collapse: separate; /* Разделение границ ячеек для лучшего контроля */
+    border-spacing: 20px; /* Добавление отступов между колонками */
+}
+
+.schedule td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+/* Время */
+.time {
+    font-size: 1.2em; /* Увеличение размера времени */
+    color: black; /* Черный цвет */
+    font-weight: bold; /* Жирный текст */
+}
+
+/* Дата в таблице */
+.date-in-table {
+    font-size: 1em; /* Размер даты в таблице */
+    color: black; /* Черный цвет */
+}
+
+/* Название события */
+.event-title {
+    text-align: right; /* Выравнивание текста вправо */
+    font-weight: bold;
+    font-size: 1.1em; /* Уменьшение размера заголовка */
+    margin: 0;
+    color: black; /* Черный цвет */
+}
+
+/* Адрес */
+.event-location {
+    text-align: right; /* Выравнивание текста вправо */
+    font-style: italic;
+    font-size: 1em; /* Уменьшение размера адреса */
+    margin: 0;
+    color: black; /* Черный цвет */
+}
+
+/* Описание события */
+.event-description {
+    font-size: 0.9em; /* Уменьшение размера описания */
+    margin: 5px 0 0;
+    text-align: justify; /* Выравнивание текста влево */
+    color: #333; /* Обычный цвет текста */
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
