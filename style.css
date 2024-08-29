@@ -42,10 +42,12 @@ body {
 
 /* Новая секция */
 .hero-content {
-    width: 80%;
+    width: 100%; /* Полная ширина экрана */
     max-width: 800px;
     margin: 160px auto 0; /* Отступ сверху для расстояния от заголовка */
     text-align: right; /* Выравнивание текста вправо */
+    padding: 0 20px; /* Добавляем внутренние отступы */
+    box-sizing: border-box; /* Учитываем внутренние отступы в ширину элемента */
 }
 
 .hero-content h2, .hero-content p {
@@ -57,10 +59,10 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em; /* Уменьшение размера заголовка */
     margin: 0;
     font-weight: 700;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
@@ -79,11 +81,11 @@ h2 {
     text-align: left;
     padding: 40px 20px;
     background: white;
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin: -50px auto 20px auto;
+    margin: 20px auto; /* Изменен отступ для более гармоничного отображения */
     position: relative;
     z-index: 1;
 }
@@ -94,7 +96,7 @@ h2 {
 }
 
 .info-heading {
-    font-size: 1.6em;
+    font-size: 1.4em; /* Уменьшение размера заголовков */
     font-style: italic; /* Курсив только для заголовков */
     color: black; /* Черный цвет только для заголовков */
     margin: 20px 0;
@@ -102,14 +104,14 @@ h2 {
 }
 
 .info-heading-2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
     color: black; /* Черный цвет только для заголовков */
     margin: 20px 0;
     font-weight: bold; /* Жирный текст только для заголовков */
 }
 
 .info-text {
-    font-size: 1.2em;
+    font-size: 1.1em; /* Уменьшение размера шрифта текста */
     color: #333; /* Обычный цвет текста */
     margin: 10px 0;
 }
@@ -175,9 +177,9 @@ h2 {
 /* Медиа-запросы для мобильных устройств */
 @media (max-width: 768px) {
     .hero-content {
-        width: 90%;
         margin: 80px auto 0; /* Уменьшение отступа сверху для мобильных экранов */
         text-align: center; /* Выравнивание текста по центру для мобильных экранов */
+        padding: 0 10px; /* Уменьшение внутренних отступов */
     }
 
     .details {
@@ -208,7 +210,7 @@ h2 {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 3em; /* Уменьшение размера шрифта заголовка для маленьких экранов */
+        font-size: 2.5em; /* Уменьшение размера шрифта заголовка для маленьких экранов */
     }
 
     .hero-content h2 {
